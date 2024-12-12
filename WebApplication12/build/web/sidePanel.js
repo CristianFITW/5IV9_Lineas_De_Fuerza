@@ -36,7 +36,7 @@ function createSidePanel()
         new Button({position: canvas.createVector(col1, 385), width: buttonFullWidth, height: buttonHeight, text: "Eliminar Cargas Del Plano", onClick: function(){ createPreset(null); testCharges=[];} }));
 
     checkBoxes.push(
-        new CheckBox({position: canvas.createVector(col1, 465), height: 20, width: checkBoxWidth, text: "Carga De Prueba Individual", value: false, onClick: function(){ testChargeMode = this.value; }, hoverText: "Click to Anywhere to Place a Test Charge" }))
+        new CheckBox({position: canvas.createVector(col1, 465), height: 20, width: checkBoxWidth, text: "Modo De Carga De Prueba", value: false, onClick: function(){ testChargeMode = this.value; }, hoverText: "Click to Anywhere to Place a Test Charge" }))
 
     buttons.push(
         new Button({position: canvas.createVector(col1, 490), width: buttonFullWidth, height: buttonHeight, text: "Plano Con Cargas De Prueba", onClick: function(){ testChargeMode = true; createTestChargeMap(); checkBoxes[6].value = true; testChargeMode = true;} }),

@@ -12,31 +12,31 @@ function createPopUps()
             position: new p5.Vector((innerWidth / 2) + (buttonHalfWidth / 4), (innerHeight / 2) + 150), 
             width: buttonHalfWidth, 
             height: buttonHeight, 
-            text: "Next", 
+            text: "Siguiente", 
             onClick: function(){ currentPopUp++ }
         }),
         new Button({
             position: new p5.Vector((innerWidth / 2) - (buttonHalfWidth), (innerHeight / 2) + 150), 
             width: buttonHalfWidth, 
             height: buttonHeight, 
-            text: "Previous", 
+            text: "Anterior", 
             onClick: function(){ currentPopUp-- }
         }),
         new Button({
             position: new p5.Vector((innerWidth / 2) + 160, (innerHeight / 2) - 180), 
             width: 30, 
             height: 30, 
-            text: "×", 
+            text: "X", 
             onClick: function(){ showHelp = false }
         })
     ]
 
     helpText = [
-        "Double click anywhere to create a charge.",
-        "The slider underneath the charge can be used to adjust the magnitude and sign of that charge.",
-        "Charges can also be dragged around the screen by clicking and dragging on them.",
-        "Drag a charge to the trash icon to delete it",
-        "The checkboxes on the right side of the screen can be used to toggle the different features in the simulation.",
+        "Dar Doble Click Para Crear Una Carga.",
+        "La Barra Deslizante Debajo De La Carga Puede Alterar La Magnitud y Signo De La Carga.",
+        "Puedes Arrastrar La Carga Dejando El Click Presionado.",
+        "Para Elminar Una Carga, Arrástrala Al Icono De Basura.",
+        "En El Panel Derecho Se Muestran Opciones Que Pueden Modificar La Simulación.",
     ]
 }
 
