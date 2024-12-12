@@ -21,7 +21,7 @@ function createSidePanel()
     checkBoxes.push(
         new CheckBox({position: canvas.createVector(col1, 50), height: 20, width: checkBoxWidth, text: "Líneas De Campo",          value: true, onClick: function(){ showFieldLines = this.value; if (this.value) { createFieldLines() } } }),
         new CheckBox({position: canvas.createVector(col1, 75), height: 20, width: checkBoxWidth, text: "Vectores De Campo",        value: false, onClick: function(){ showFieldVectors = this.value; if (this.value) { createFieldVectors() } } }),
-        new CheckBox({position: canvas.createVector(col1, 100), height: 20, width: checkBoxWidth, text: "Líneas Equipotenciales", value: false, onClick: function(){ showEquipotentialLines = this.value; equiLines = []; }, hoverText: "Click to Anywhere to Draw an Equipotential Line" }),
+        new CheckBox({position: canvas.createVector(col1, 100), height: 20, width: checkBoxWidth, text: "Líneas Equipotenciales", value: false, onClick: function(){ showEquipotentialLines = this.value; equiLines = []; }, hoverText: "Presiona Culaquier Punto En El Plano Para Trazar Una Linea Equipotencial" }),
         new CheckBox({position: canvas.createVector(col1, 125), height: 20, width: checkBoxWidth, text: "Voltaje",             value: false, onClick: function(){ showVoltage = this.value; if (this.value) { createVoltage() } } }),
         new CheckBox({position: canvas.createVector(col1 + 20, 150), height: 20, width: checkBoxWidth, text: "Valor Numérico",     value: false, onClick: function(){ showVoltageValue = this.value } }),
         new CheckBox({position: canvas.createVector(col1, 175), height: 20, width: checkBoxWidth, text: "Mostrar Cuadrícula",           value: true,  onClick: function(){ createGrid = this.value; } }),
@@ -36,7 +36,7 @@ function createSidePanel()
         new Button({position: canvas.createVector(col1, 385), width: buttonFullWidth, height: buttonHeight, text: "Eliminar Cargas Del Plano", onClick: function(){ createPreset(null); testCharges=[];} }));
 
     checkBoxes.push(
-        new CheckBox({position: canvas.createVector(col1, 465), height: 20, width: checkBoxWidth, text: "Modo De Carga De Prueba", value: false, onClick: function(){ testChargeMode = this.value; }, hoverText: "Click to Anywhere to Place a Test Charge" }))
+        new CheckBox({position: canvas.createVector(col1, 465), height: 20, width: checkBoxWidth, text: "Modo De Carga De Prueba", value: false, onClick: function(){ testChargeMode = this.value; }, hoverText: "Presiona Cualquier Punto En El Plano Para Colocar Una Carga De Prueba" }))
 
     buttons.push(
         new Button({position: canvas.createVector(col1, 490), width: buttonFullWidth, height: buttonHeight, text: "Plano Con Cargas De Prueba", onClick: function(){ testChargeMode = true; createTestChargeMap(); checkBoxes[6].value = true; testChargeMode = true;} }),
