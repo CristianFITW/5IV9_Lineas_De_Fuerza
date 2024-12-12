@@ -51,7 +51,6 @@ function bottomButtons(i)
         saveAsPNG();
     }
 }
-
 function displaySidePanel()
 {
     let canvas = foreGroundCanvas;
@@ -102,7 +101,16 @@ function displaySidePanel()
         canvas.noStroke();
         canvas.textSize(16);
         
-        canvas.text("Premade Configurations: " , buttons[1].position.x, 260);
+        canvas.text("Premade Configurations: ", buttons[1].position.x, 260);
+
+        // Texto adicional 1
+        canvas.text("Gonzalez Nava Rodrigo Yael", buttons[1].position.x, 700);
+
+        // Texto adicional 2
+        canvas.text("Gutierrez Flores Cristian", buttons[1].position.x, 730);
+
+        // Texto adicional 3
+        canvas.text("Mendoza Sanchez Carlos", buttons[1].position.x, 760);
 
         canvas.imageMode(canvas.CENTER);
 
@@ -112,6 +120,7 @@ function displaySidePanel()
 
     canvas.pop()
 }
+
 
 function createDataFromSidePanel() 
 {
